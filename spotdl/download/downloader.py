@@ -30,6 +30,7 @@ class DownloadManager:
         arguments.setdefault("output_format", "mp3")
         arguments.setdefault("download_threads", 4)
         arguments.setdefault("path_template", None)
+        arguments.setdefault("safe_filenames", None)
 
         if sys.platform == "win32":
             # ! ProactorEventLoop is required on Windows to run subprocess asynchronously

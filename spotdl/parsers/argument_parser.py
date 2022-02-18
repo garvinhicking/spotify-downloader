@@ -175,4 +175,11 @@ def parse_arguments():
         action="store_true",
     )
 
+    # Option to sanitize filenames for maximum compatibility
+    parser.add_argument(
+        "--safe-filenames",
+        "--sf",
+        help="Replaces all special characters in filename for maximum compatibility (i.e. dropbox)",
+    )
+
     return parser.parse_args()
